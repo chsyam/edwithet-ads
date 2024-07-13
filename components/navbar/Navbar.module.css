@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 70px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins';
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.navbar,
+.navbar .navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: space-around;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar .navLinks {
+    column-gap: 20px;
+    list-style: none;
+}
+
+.navbar .navLinks li:hover {
+    border: 2px solid #FFF;
+}
+
+.navbar .navLinks li {
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #1f1861;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        zoom: 0.4;
+    }
+}
