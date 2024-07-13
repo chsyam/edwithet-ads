@@ -19,8 +19,10 @@ export default function RootLayout({ children }) {
 
 	return (
 		<html lang="en">
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035732498574241"
-				crossOrigin="anonymous"></script>
+			<head>
+				<meta name="google-adsense-account" content="ca-pub-9035732498574241"></meta>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035732498574241" crossOrigin="anonymous"></script>
+			</head>
 			<body className={inter.className}>{children}</body>
 		</html>
 	);
