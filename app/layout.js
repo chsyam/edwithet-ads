@@ -3,19 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { useEffect } from "react";
+import Navbar from "@/components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-	// useEffect(() => {
-	// 	if (process.env.NODE_ENV === "production") {
-	// 		const script = document.createElement("script");
-	// 		script.async = true;
-	// 		script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035732498574241";
-	// 		script.crossOrigin = "anonymous";
-	// 		document.head.appendChild(script);
-	// 	}
-	// }, [])
 
 	return (
 		<html lang="en">
@@ -23,7 +15,10 @@ export default function RootLayout({ children }) {
 				<meta name="google-adsense-account" content="ca-pub-9035732498574241"></meta>
 				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035732498574241" crossOrigin="anonymous"></script>
 			</head>
-			<body className={inter.className}>{children}</body>
+			<body style={{ padding: 0, margin: 0 }} className={inter.className}>
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -1,11 +1,14 @@
-"use client";
-import Navbar from "@/components/navbar/Navbar";
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 
 export default function Home() {
+
+	useEffect(() => {
+		document.title = "Home";
+		window.location.href = "/blogs"
+	}, []);
+
 	return (
-		<div>
-			<Navbar />
-		</div>
+		<center>Home</center>
 	);
 }

@@ -1,12 +1,15 @@
 "use client";
-import Navbar from "@/components/navbar/Navbar";
 import VideoContent from "./VideoContent";
-import styles from './Videos.module.css'
+import styles from '@/styles/Videos.module.css'
+import { useEffect } from "react";
 
 function Videos() {
+    useEffect(() => {
+        document.title = "Yt videos";
+    }, []);
+
     return (
         <div className={styles.videoBody}>
-            <Navbar />
             <VideoContent />
         </div>
     );

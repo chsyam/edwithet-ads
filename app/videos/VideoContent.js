@@ -1,5 +1,5 @@
 "use client";
-import styles from "./Videos.module.css";
+import styles from "@/styles/Videos.module.css";
 import React from 'react';
 
 function VideoContent() {
@@ -50,7 +50,7 @@ function VideoContent() {
                             allowFullScreen>
                         </iframe>
                         <div className={styles.title}>
-                            {video.title}
+                            <span>{video.title}</span>
                         </div>
                     </div>
                 )

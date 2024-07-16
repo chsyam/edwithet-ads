@@ -1,0 +1,64 @@
+.feedbackForm {
+    display: grid;
+    margin: 20px;
+    font-family: 'Poppins';
+    margin: 30px 15% 40px 15%;
+}
+
+.feedbackForm .heading {
+    font-size: 30px;
+}
+
+.feedbackForm form {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.feedbackForm form div {
+    margin: 20px 0;
+}
+
+.feedbackForm form input {
+    width: 100%;
+    outline: none;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #eaeaea;
+}
+
+.feedbackForm form textarea {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    border: 2px solid #eaeaea;
+}
+
+.feedbackForm form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.feedbackForm .submitButton {
+    background-color: #1e00ff;
+    padding: 10px;
+    color: #FFF;
+    border: 1px solid #1e00ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 850px) {
+    .blogContent {
+        zoom: 0.5;
+    }
+}

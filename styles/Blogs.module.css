@@ -1,0 +1,57 @@
+.blogContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 20px 10px 10px 10px;
+}
+
+.card {
+    height: 330px;
+    width: 380px;
+    font-family: 'Poppins';
+    margin: 10px;
+    background-color: rgb(243, 243, 243);
+
+    /* -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+.card .cardFooter {
+    padding: 5px 10px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 0 5px 0;
+}
+
+.title p {
+    height: 30px;
+    width: 320px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.date {
+    color: black;
+    font-size: 12px;
+    padding: 0 0 5px 0;
+}
+
+.buttons {
+    color: blue;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .blogContent {
+        zoom: 0.6;
+    }
+}
