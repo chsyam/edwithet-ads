@@ -6,7 +6,7 @@ function BlogCard({ blog }) {
     return (
         <div className={styles.card}>
             <div>
-                <Image src={blog.image} width={380} height={230} alt="Blog image" />
+                <Image src={blog.image} width={380} height={200} alt="Blog image" />
             </div>
             <div className={styles.cardFooter}>
                 <div className={styles.title}>

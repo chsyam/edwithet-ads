@@ -6,15 +6,15 @@ function Feedback() {
             <form>
                 <div className={styles.heading}>Leave a Comment</div>
                 <div>
-                    <label for="comment">Comment (required)</label><br />
+                    <label htmlFor="comment">Comment (required)</label><br />
                     <textarea id="comment" rows="6" cols="70"></textarea>
                 </div>
                 <div>
-                    <label for="name">Name (required)</label><br />
+                    <label htmlFor="name">Name (required)</label><br />
                     <input type="text" id="name" required />
                 </div>
                 <div>
-                    <label for="email">Email(will not be published) (required)</label><br />
+                    <label htmlFor="email">Email(will not be published) (required)</label><br />
                     <input type="email" id="email" required />
                 </div>
                 <div>

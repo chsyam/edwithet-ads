@@ -7,7 +7,7 @@
 }
 
 .card {
-    height: 330px;
+    height: 300px;
     width: 380px;
     font-family: 'Poppins';
     margin: 10px;
@@ -52,6 +52,6 @@
 
 @media (max-width: 850px) {
     .blogContent {
-        zoom: 0.6;
+        zoom: 0.4;
     }
 }

@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 850px) {
-    .blogContent {
-        zoom: 0.5;
+    .feedbackForm {
+        zoom: 0.4;
     }
 }
