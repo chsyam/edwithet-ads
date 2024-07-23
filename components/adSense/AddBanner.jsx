@@ -3,10 +3,12 @@ import React, { useEffect } from "react";
 
 const AddBanner = ({ dataAdSlot, dataAdFormat, dataFullWidthResponsive }) => {
   useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (error) {
-      console.log(error.message);
+    if (typeof window !== "undefined") {
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        console.error("Adsbygoogle error:", e);
+      }
     }
   }, []);
 

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
-				<Adsense pId="ca-pub-9035732498574241" />
+				<Adsense pId="9035732498574241" />
 			</head>
 			<body style={{ padding: 0, margin: 0 }} className={inter.className}>
 				<Navbar />
