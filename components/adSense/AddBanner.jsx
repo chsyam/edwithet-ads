@@ -4,6 +4,16 @@ import React, { useEffect } from "react";
 const AddBanner = ({ dataAdSlot, dataAdFormat, dataFullWidthResponsive }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
+      const script = document.createElement("script");
+      script.src =
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.adsbygoogle) {
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {
