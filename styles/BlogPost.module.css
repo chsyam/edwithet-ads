@@ -18,19 +18,18 @@
 }
 
 .blogPost .content {
-    font-size: 16px;
+    font-size: 14px;
     margin: 30px 0 50px 0;
 }
 
 .resources {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-    grid-template-columns: auto auto;
     justify-content: center;
 }
 
 .resources iframe {
-    width: 450px;
+    width: 40%;
     border: 1px solid #000;
     border-radius: 5px;
     height: 300px;
@@ -96,14 +95,21 @@
     font-size: 16px;
 }
 
+@media (max-width: 1200px) {
+    .resources iframe {
+        width: 70%;
+    }
+}
+
 @media (max-width: 850px) {
     .blogPost {
         zoom: 0.4;
         margin: 70px 5% 40px 5%;
     }
+}
 
+@media (max-width: 400px) {
     .resources iframe {
-        width: 400px;
-        height: 350px;
+        width: 70%;
     }
 }
