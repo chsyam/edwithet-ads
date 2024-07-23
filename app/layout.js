@@ -1,10 +1,10 @@
 "use client"
-import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import Head from "next/head";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
 import Adsense from "@/components/adSense/Adsense";
-import Head from "next/head";
 import AddBanner from "@/components/adSense/AddBanner";
 
 const inter = Inter({ subsets: ["latin"] });
