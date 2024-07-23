@@ -3,6 +3,7 @@ import styles from "@/styles/Blogs.module.css";
 import BlogCard from "./BlogCard";
 import Blog1 from "./../../components/images/kfvmyjk6hz8-1536x1051.jpg"
 import { useEffect } from "react";
+import AddBanner from "@/components/adSense/AddBanner";
 
 function Blogs() {
     useEffect(() => {
@@ -42,6 +43,11 @@ function Blogs() {
 
     return (
         <div className={styles.blogContent}>
+            <AddBanner
+                dataAdFormat="auto"
+                dataFullWidthResponsive={true}
+                dataAdSlot="9640323625"
+            />
             {
                 blogsList.map((blog, index) =>
                     <BlogCard key={index} blog={blog} />

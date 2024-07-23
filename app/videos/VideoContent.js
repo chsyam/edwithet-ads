@@ -1,4 +1,5 @@
 "use client";
+import AddBanner from "@/components/adSense/AddBanner";
 import styles from "@/styles/Videos.module.css";
 import React from 'react';
 
@@ -40,6 +41,11 @@ function VideoContent() {
 
     return (
         <div className={styles.VideoContent}>
+            <AddBanner
+                dataAdFormat="auto"
+                dataFullWidthResponsive={true}
+                dataAdSlot="9640323625"
+            />
             {
                 videoInfo.map((video, index) =>
                     <div className={styles.video} key={index}>
