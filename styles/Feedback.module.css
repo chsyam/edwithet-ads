@@ -1,53 +1,52 @@
 .feedbackForm {
     display: grid;
-    margin: 20px;
     font-family: 'Poppins';
-    margin: 30px 15% 40px 15%;
+    margin: 30px 15% 30px 15%;
 }
 
-.feedbackForm .heading {
+.form .heading {
     font-size: 30px;
 }
 
-.feedbackForm form {
+.form {
     background-color: #eaeaea;
-    padding: 20px;
+    padding: 10px 25px;
     border-radius: 20px;
     width: 100%;
 }
 
-.feedbackForm form div {
+.form div {
     margin: 20px 0;
 }
 
-.feedbackForm form input {
+.form input {
     width: 100%;
     outline: none;
     height: 40px;
-    margin: 10px 0;
     font-size: 16px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #eaeaea;
+    margin-top: 5px;
 }
 
-.feedbackForm form textarea {
+.form textarea {
     width: 100%;
     outline: none;
     font-size: 16px;
-    margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
     resize: none;
     border: 2px solid #eaeaea;
+    margin-top: 5px;
 }
 
-.feedbackForm form label {
-    font-size: 14px;
+.form label {
+    font-size: 16px;
     font-weight: 600;
 }
 
-.feedbackForm .submitButton {
+.form .submitButton {
     background-color: #1e00ff;
     padding: 10px;
     color: #FFF;
@@ -55,6 +54,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin: 10px 0 0 0;
 }
 
 @media (max-width: 850px) {

@@ -1,6 +1,6 @@
 .blogPost {
     background-color: #eaeaea;
-    margin: 30px 15% 40px 15%;
+    margin: 40px 15% 40px 15%;
     border-radius: 20px;
     padding: 20px;
     font-family: 'Poppins';
@@ -8,108 +8,61 @@
 
 .blogPost .title {
     font-size: 2em;
-    font-style: italic;
-    margin-bottom: 20px;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
 }
 
-.blogPost .datePublished {
-    font-size: 14px;
-    margin: 5px 0;
-}
 
 .blogPost .content {
-    font-size: 14px;
-    margin: 30px 0 50px 0;
+    font-size: 15px;
+    margin: 50px 50px;
+    text-align: justify;
 }
 
 .resources {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin: 40px 0;
 }
 
 .resources iframe {
-    width: 40%;
-    border: 1px solid #000;
-    border-radius: 5px;
-    height: 300px;
-    margin: 20px;
+    width: 75%;
+    height: 350px;
+    border: 2px solid rgb(70, 70, 70);
 }
 
-.feedbackForm {
-    display: grid;
-    margin: 20px;
-    font-family: 'Poppins';
-    margin: 30px 0 10px 0;
+.blogDetails {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
 }
 
-.feedbackForm .heading {
-    font-size: 30px;
+.blogDetails div:nth-child(1) {
+    margin-right: 2px;
 }
 
-.feedbackForm form {
-    background-color: #eaeaea;
-    padding: 20px;
-    border-radius: 20px;
-    width: 100%;
+.authourName {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 3px;
 }
 
-.feedbackForm form div {
-    margin: 20px 0;
-}
-
-.feedbackForm form input {
-    width: 100%;
-    outline: none;
-    height: 40px;
-    margin: 10px 0;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #eaeaea;
-}
-
-.feedbackForm form textarea {
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    resize: none;
-    border: 2px solid #eaeaea;
-}
-
-.feedbackForm form label {
+.datePublished {
     font-size: 14px;
-    font-weight: 600;
-}
-
-.feedbackForm .submitButton {
-    background-color: #1e00ff;
-    padding: 10px;
-    color: #FFF;
-    border: 1px solid #1e00ff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-@media (max-width: 1200px) {
-    .resources iframe {
-        width: 70%;
-    }
+    text-align: left;
+    color: rgb(99, 99, 99);
 }
 
 @media (max-width: 850px) {
     .blogPost {
-        zoom: 0.4;
-        margin: 70px 5% 40px 5%;
+        zoom: 0.6;
+        margin: 40px 5% 40px 5%;
     }
 }
 
 @media (max-width: 400px) {
     .resources iframe {
-        width: 70%;
+        width: 90%;
     }
 }
