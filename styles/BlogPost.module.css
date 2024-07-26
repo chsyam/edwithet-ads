@@ -1,22 +1,26 @@
 .blogPost {
     background-color: #eaeaea;
-    margin: 40px 15% 40px 15%;
-    border-radius: 20px;
     padding: 20px;
     font-family: 'Poppins';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blogPost .title {
     font-size: 2em;
-    font-weight: 500;
-    margin: 10px 0 20px 0;
+    font-weight: 600;
+    margin: 20px 15% 10px 15%;
 }
 
 
 .blogPost .content {
-    font-size: 15px;
-    margin: 50px 50px;
+    font-size: 18px;
+    width: 50%;
+    margin: 30px 25%;
     text-align: justify;
+    font-weight: 400;
 }
 
 .resources {
@@ -26,15 +30,16 @@
 }
 
 .resources iframe {
-    width: 75%;
-    height: 350px;
-    border: 2px solid rgb(70, 70, 70);
+    width: 70%;
+    height: 450px;
+    box-shadow: 2px 2px 8px rgb(129, 129, 129);
 }
 
 .blogDetails {
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    margin: 10px 15%;
 }
 
 .blogDetails div:nth-child(1) {
@@ -49,20 +54,67 @@
 }
 
 .datePublished {
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
-    color: rgb(99, 99, 99);
+    color: rgb(126, 126, 126);
 }
 
-@media (max-width: 850px) {
+.feedbackSection {
+    margin: 30px 15% 30px 15%;
+}
+
+@media (max-width: 1000px) {
     .blogPost {
         zoom: 0.6;
-        margin: 40px 5% 40px 5%;
+    }
+
+    .feedbackSection {
+        margin: 30px 15% 30px 15%;
+    }
+
+    .resources iframe {
+        height: 400px;
+        width: 80%;
+    }
+
+    .blogPost .content {
+        font-size: 22px;
+        width: 70%;
+        margin: 30px 15%;
+    }
+
+    .blogPost .title {
+        font-size: 2em;
+        margin: 20px 10% 5px 10%;
+    }
+
+    .blogDetails {
+        margin: 10px 10% 10px 10%;
+    }
+
+    .authourName {
+        margin-top: 5px;
+        font-weight: 600;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
+    .blogPost .title {
+        margin: 20px 5% 5px 5%;
+    }
+
+    .blogPost .content {
+        width: 80%;
+        margin: 30px 10%;
+    }
+
     .resources iframe {
+        height: 400px;
         width: 90%;
+    }
+
+    .feedbackSection {
+        margin: 30px 5% 30px 5%;
     }
 }
