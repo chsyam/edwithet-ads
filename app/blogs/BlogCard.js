@@ -23,7 +23,7 @@ function BlogCard({ blog }) {
                 </div>
                 <div className={styles.content}>
                     <p>
-                        {blog.content}
+                        <div dangerouslySetInnerHTML={{ __html: blog?.content }} />
                     </p>
                 </div>
                 <div className={styles.date}>{printFullDate(blog.postedAt)}</div>

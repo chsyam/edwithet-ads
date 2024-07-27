@@ -1,8 +1,10 @@
 "use client"
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function Home() {
 	return (
-		<center>Home</center>
+		<div>
+			<center>Welcome Back</center>
+		</div>
 	);
 }

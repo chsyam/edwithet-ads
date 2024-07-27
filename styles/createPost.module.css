@@ -1,0 +1,76 @@
+.addPost {
+    width: 80%;
+    font-family: 'Poppins';
+    margin: 40px 10% 40px 10%;
+}
+
+.preview {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.editorInput {
+    height: 100%;
+    width: 100%;
+}
+
+.form .heading {
+    font-size: 30px;
+}
+
+.form {
+    background-color: #eaeaea;
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.form div {
+    margin: 20px 0;
+}
+
+.form input {
+    width: 100%;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #eaeaea;
+    margin: 5px 0;
+}
+
+.form textarea {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    border: 2px solid #eaeaea;
+    margin: 5px 0;
+}
+
+.form label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form .submitButton {
+    background-color: #1e00ff;
+    padding: 10px;
+    color: #FFF;
+    border: 1px solid #1e00ff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 850px) {
+    .feedbackForm {
+        zoom: 0.4;
+    }
+}
