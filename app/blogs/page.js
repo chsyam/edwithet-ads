@@ -12,7 +12,7 @@ export default function Blogs() {
 
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get("http://localhost:8080/api/blogs/all");
+                const response = await axios.get("https://educationforjobs.onrender.com/api/blogs/all");
                 setBlogsData(response.data);
             } catch (error) {
                 console.log(error);

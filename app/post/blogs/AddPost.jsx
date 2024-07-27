@@ -6,11 +6,11 @@ import { useRef, useState } from "react";
 
 function AddPost() {
     const editor = useRef(null);
-    const [content, setContent] = useState('');
 
     const [formData, setFormData] = useState({
         title: "",
         publisherName: "Sai Kumar Nanna",
+        content: "",
         videoUrl: "",
         resourceUrl: "",
     })
@@ -25,13 +25,15 @@ function AddPost() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormData({
-            ...formData,
-            content: content
-        })
         console.log(formData);
-        const response = await axios.post("http://localhost:8080/api/blogs/create", formData);
+        const response = await axios.post("https://educationforjobs.onrender.com/api/blogs/create", formData);
         console.log(response);
+        if (response.status === 201) {
+            alert("Blog Created Successfully");
+            window.location.reload();
+        } else {
+            alert("Something went wrong. Please try again later");
+        }
     }
 
     return (
@@ -51,13 +53,18 @@ function AddPost() {
                     <div className={styles.editor}>
                         <JoditEditor
                             ref={editor}
-                            value={content}
-                            onChange={newContent => { setContent(newContent) }}
+                            value={formData.content}
+                            onChange={newContent => {
+                                setFormData({
+                                    ...formData,
+                                    "content": newContent
+                                })
+                            }}
                         />
                     </div>
-                    {content.length > 0 && <div><label>Live Preview</label><br /></div>}
+                    {formData.content.length > 0 && <div><label>Live Preview</label><br /></div>}
                     <div className={styles.preview}>
-                        <div dangerouslySetInnerHTML={{ __html: content }}></div>
+                        <div dangerouslySetInnerHTML={{ __html: formData.content }}></div>
                     </div>
                 </div>
                 <div>

@@ -22,7 +22,7 @@ function FeedbackForm({ relatedBlogId }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         relatedBlogId && (formData.relatedBlogId = relatedBlogId);
-        const response = await axios.post("http://localhost:8080/api/submitfeedback", formData);
+        const response = await axios.post("https://educationforjobs.onrender.com/api/submitfeedback", formData);
         console.log(response);
     }
 

@@ -17,7 +17,7 @@ export default function BlogPost({ params }) {
 	useEffect(() => {
 		async function fetchBlogData() {
 			document.title = "Blogs";
-			const response = await axios.get(`http://localhost:8080/api/blogs/${params.id}`)
+			const response = await axios.get(`https://educationforjobs.onrender.com/api/blogs/${params.id}`)
 			setBlogInfo(response.data);
 		}
 		fetchBlogData();
