@@ -1,8 +1,16 @@
 "use client"
 import styles from "@/styles/createPost.module.css"
 import axios from "axios";
-import JoditEditor from "jodit-react";
 import { useRef, useState } from "react";
+// import JoditEditor from "jodit-react";
+
+
+import dynamic from 'next/dynamic';
+
+const JoditEditor = dynamic(() => import("jodit-react"), {
+    ssr: false
+});
+
 
 function AddPost() {
     const editor = useRef(null);
